@@ -1,0 +1,203 @@
+.wrapper
+{
+    margin: auto;
+    max-width: 1110px;
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    
+    grid-template-areas: 
+        "yla yla"
+        "nosto nosto"
+        "aside sisalto"
+        "ala ala"
+        ;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+    
+    background-color: rgb(232, 237, 240, 0.75);
+    border-radius: 10px;
+    
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+body
+{
+    background-image: url('taustakuva.jfif');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 1500px;
+}
+
+header img
+{
+    max-width: 100%;
+    height: auto;
+    margin-left: 13%
+    
+}
+header
+{
+    grid-area: yla;
+    
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.left
+{
+    grid-area: aside;
+
+    border-radius: 10px;
+}
+
+footer
+{
+    grid-area: ala;
+    background-color: rgb(157,166,165, 0.8);
+    border-radius: 10px;
+    
+}
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+footer p
+{
+    text-align: left;
+    margin-left: 25%;
+}
+
+
+
+article
+{
+    grid-area: sisalto;
+    background-color: rgb(157,166,165, 0.8);
+    border-radius: 10px;
+    
+}
+article p
+{
+    text-align: left;
+    margin-left: 6%;
+    width: 500px;
+}
+.navi
+{
+    grid-area: nosto;
+    text-align: center;
+    background-color: rgb(133,137,136,0.9);
+    border-radius: 10px;
+    margin-left: 0;
+    padding-left: 25%;
+    list-style-type: none;
+    overflow: hidden;    
+}
+
+li
+{
+    float:left;
+}
+
+h1
+{
+    margin-left: 6%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left p {
+    
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li a 
+{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+li a:hover
+{
+    background-color: black;
+}
+
+.flex-container img {
+    padding-top: 10%;
+    padding-right: 90%;
+}
+
+.uutiset p
+{
+    font-size: 15px;
+    border-style: solid;
+    background-color: rgb(157,166,165, 0.8);
+}
+
+.left img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news
+{
+    list-style-type: none;
+    background-color: rgb(157,166,165, 0.8);
+    
+}
+
+
+.uutiset a:link
+{
+    color: black;
+}
+.uutiset a:visited
+{
+    color: black;
+}
+.uutiset a:active
+{
+    color: black;
+}
+@media (max-width: 700px)
+{
+    body
+    {
+    }
+    
+    .wrapper
+    {
+        grid-template-areas: 
+            "yla yla"
+            "nosto nosto"
+            "sisalto sisalto"
+            "aside aside"
+            "ala ala"
+            ;
+        grid-row-gap: 10px;
+    }
+}
+
+
